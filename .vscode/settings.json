@@ -1,0 +1,4 @@
+{
+  // This silences the warning in VS Code without affecting how Tailwind works.
+  "css.lint.unknownAtRules": "ignore"
+}
