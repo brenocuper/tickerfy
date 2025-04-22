@@ -46,7 +46,13 @@ export function Dashboard() {
   }, [fetchFinanceData])
 
   async function fetchFinance() {
-    const response = await api.get('/finance')
+
+    const key = import.meta.env.VITE_HG_API_KEY
+    const url = key
+      ? `/finance?key=${key}`
+      : '/finance'
+
+    const response = await api.get(url)
     return response.data.results
   }
 
