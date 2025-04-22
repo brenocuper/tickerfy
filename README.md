@@ -128,7 +128,7 @@ VITE_API_BASE_URL=https://api.hgbrasil.com
 ✔ Atualização automática a cada 2 segundos  
 ✔ Gráfico de histórico ao clicar em um item  
 ✔ Responsividade  
-❌ Deploy em produção _(buscando solução para CORS entre Netlify e HG Brasil)_
+✔ Deploy em produção
 
 ---
 
