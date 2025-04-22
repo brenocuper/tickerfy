@@ -5,7 +5,7 @@ import cors from 'cors'
 const app = express()
 app.use(cors())
 
-app.get('/finance', async (req, res) => {
+app.get('/finance', async (_, res) => {
   try {
     const response = await axios.get('https://api.hgbrasil.com/finance')
     res.json(response.data)

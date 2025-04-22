@@ -36,7 +36,7 @@ export function Dashboard() {
 
     fetchFinanceData()
 
-    intervalRef.current = setInterval(fetchFinanceData, 10000)
+    intervalRef.current = setInterval(fetchFinanceData, 2000)
 
     return () => {
       if (intervalRef.current) {
